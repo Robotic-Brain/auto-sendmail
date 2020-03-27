@@ -7,9 +7,11 @@ This script automates that ;)
 
 Simply run sender.sh as a cronjob
 
-The programm loops over every file in `./tasks/taskname/` and sends the specified emails.
+The programm loops over every file in `./tasks/<taskname>/` and sends the specified emails.
 
 A Randomisation factor of up to 20 minutes in the past is applied to the Send-Date
+
+Emails are sourced shell scripts which should echo the actual SMTP mail on STDOUT
 
 # Filename Format
 `<WEEKDAY>_<HOUR>_<MINUTE>_<DESCRIPTION>`
