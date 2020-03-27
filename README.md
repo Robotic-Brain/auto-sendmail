@@ -15,7 +15,10 @@ The programm loops over every file in `./tasks/<taskname>/` and sends the specif
 
 A Randomisation factor of up to 20 minutes in the past is applied to the Send-Date
 
+The Send-Date is based on the magic filename [see below](#filename-format)
+
 Emails are sourced shell scripts which should echo the actual SMTP mail on STDOUT
+
 
 # Environment
 `DATE` contains the fudged date of the email
