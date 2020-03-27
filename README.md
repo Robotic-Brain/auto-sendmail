@@ -5,7 +5,7 @@ This script automates that ;)
 
 # Usage
 
-Simply run sender.sh as a cronjob
+Simply run `sender.sh` as a cronjob
 
 The programm loops over every file in `./tasks/<taskname>/` and sends the specified emails.
 
@@ -22,3 +22,8 @@ Emails are sourced shell scripts which should echo the actual SMTP mail on STDOU
 | HOUR        | HOUR in 24h format (00..23) (See date: %H) |
 | MINUTE      | Minute of hour (00..59) (See date: %M) |
 | DESCRIPTION | Anything you want.. Not used by programm |
+
+*Please note, that those numbers depend on the set locale of the server*
+
+# Example
+An example script is available in `src/tasks/example/5_12_35_example.eml`
