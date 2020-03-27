@@ -40,3 +40,4 @@ The `.stats` directory (sibling of the original script) contains auto-generated 
 
 # Example
 An example script is available in `src/tasks/example/5_12_35_example.eml`
+An example for complex stuff is in `src/tasks/example/5_12_35_complex.sh`
