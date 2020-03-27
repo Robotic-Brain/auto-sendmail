@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 DEBUG=${DEBUG:-0}
+SENDMAIL='/usr/sbin/sendmail'
 
 cd "$(dirname "$0")"
 
@@ -50,7 +51,7 @@ if [ "$#" -gt 0 ]; then
 				echo EMAIL=
 				echo "${EMAIL}"
 			else
-				/usr/sbin/sendmail -t -i <<<${EMAIL}
+				echo "${EMAIL}" | ${SENDMAIL} -t -i
 			fi
 		fi		
 	done
