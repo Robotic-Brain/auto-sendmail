@@ -3,6 +3,10 @@
 Some totalitarian regimes require their pupils to send an E-Mail to every teacher.  
 This script automates that ;)
 
+**DISCLAIMER: This is a 2h hackjob! If it breaks, it's not my fault!**
+
+Why do i post this? I like FOSS!
+
 # Usage
 
 Simply run `sender.sh` as a cronjob
