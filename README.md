@@ -39,5 +39,5 @@ The `.stats` directory (sibling of the original script) contains auto-generated 
 *Please note, that those numbers depend on the set locale of the server*
 
 # Example
-An example script is available in `src/tasks/example/5_12_35_example.eml`
+An example script is available in `src/tasks/example/5_12_35_example.eml`  
 An example for complex stuff is in `src/tasks/example/5_12_35_complex.sh`
