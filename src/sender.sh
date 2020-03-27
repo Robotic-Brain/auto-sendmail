@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 DEBUG=${DEBUG:-0}
 SENDMAIL='/usr/sbin/sendmail'
