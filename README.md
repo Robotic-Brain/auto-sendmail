@@ -16,6 +16,8 @@ Emails are sourced shell scripts which should echo the actual SMTP mail on STDOU
 # Environment
 `DATE` contains the fudged date of the email
 
+The `.stats` directory (sibling of the original script) contains auto-generated metadate to prevent repeatet executions within a 23h timespan
+
 # Filename Format
 `<WEEKDAY>_<HOUR>_<MINUTE>_<DESCRIPTION>`
 
