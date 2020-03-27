@@ -13,6 +13,9 @@ A Randomisation factor of up to 20 minutes in the past is applied to the Send-Da
 
 Emails are sourced shell scripts which should echo the actual SMTP mail on STDOUT
 
+# Environment
+`DATE` contains the fudged date of the email
+
 # Filename Format
 `<WEEKDAY>_<HOUR>_<MINUTE>_<DESCRIPTION>`
 
