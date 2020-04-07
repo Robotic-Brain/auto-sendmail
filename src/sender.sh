@@ -11,7 +11,7 @@ mkdir -vp "${STATDIR}"
 
 if [ "$#" -gt 0 ]; then
 	pushd "$1" >/dev/null
-	for f in $(find ./ -maxdepth 1 -type f); do
+	for f in $(find -L ./ -maxdepth 1 -type f); do
 		f=$(echo "${f}" | cut -c3-)
 		WEEKDAY=$(echo "${f}" | cut -d_ -f1)
 		HOUR=$(echo "${f}" | cut -d_ -f2)
@@ -57,5 +57,5 @@ if [ "$#" -gt 0 ]; then
 	done
 	popd >/dev/null
 else
-	find ./tasks/ -maxdepth 1 -type d ! -path ./tasks/ | xargs -n1 "$0"
+	find -L ./tasks/ -maxdepth 1 -type d ! -path ./tasks/ | xargs -n1 "$0"
 fi
